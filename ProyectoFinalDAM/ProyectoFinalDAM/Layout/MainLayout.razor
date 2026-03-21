@@ -1,15 +1,39 @@
 ﻿@inherits LayoutComponentBase
+
 <div class="page">
+    @* Menú lateral oscuro (se controla desde NavMenu.razor) *@
     <div class="sidebar">
         <NavMenu />
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        @* CABECERA DUAL: Rubén & Javier (Estilo CV) *@
+        <div class="container-fluid p-0">
+            <div class="row g-0 align-items-center text-white shadow-sm" style="background-color: #0d6efd; min-height: 110px;">
+
+                <div class="col-6 d-flex align-items-center justify-content-center p-3 border-end border-white border-opacity-25">
+                    <img src="images/ruben.jpg" class="rounded-circle border border-2 border-white me-3"
+                         style="width: 75px; height: 75px; object-fit: cover;" alt="Rubén" />
+                    <div class="d-none d-md-block">
+                        <h5 class="mb-0 fw-bold">Rubén Martín</h5>
+                        <p class="mb-0 opacity-75" style="font-size: 0.9rem;">Estudiante DAM</p>
+                    </div>
+                </div>
+
+                <div class="col-6 d-flex align-items-center justify-content-center p-3">
+                    <img src="images/javi.jpeg" class="rounded-circle border border-2 border-white me-3"
+                         style="width: 75px; height: 75px; object-fit: cover;" alt="Javi" />
+                    <div class="d-none d-md-block">
+                        <h5 class="mb-0 fw-bold">Javier Canales</h5>
+                        <p class="mb-0 opacity-75" style="font-size: 0.9rem;">Estudiante DAM</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <article class="content px-4">
+        @* CONTENIDO PRINCIPAL *@
+        <article class="content px-4 py-3">
             @Body
         </article>
     </main>

@@ -4,8 +4,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProyectoFinalDAM</title>
-    <base href="/" />
+    <title>Pro_Final_DAM</title>
+
+    <script type="text/javascript">
+        var path = window.location.pathname.split('/');
+        var base = document.createElement('base');
+        if (window.location.host.includes('localhost')) {
+            base.href = '/';
+        } else {
+            // Si el repo termina en .github.io, la base es '/',
+            // si es un repo normal, es '/NombreRepo/'
+            base.href = window.location.hostname.includes('.github.io') && path.length <= 2 ? '/' : '/' + path[1] + '/';
+        }
+        document.getElementsByTagName('head')[0].appendChild(base);
+    </script>
+
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -14,11 +27,9 @@
 
 <body>
     <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
+        <div style="display:flex; justify-content:center; align-items:center; height:100vh; background-color:#1a1a1a; color:white;">
+            <h3>Cargando Proyecto Final...</h3>
+        </div>
     </div>
 
     <div id="blazor-error-ui">
