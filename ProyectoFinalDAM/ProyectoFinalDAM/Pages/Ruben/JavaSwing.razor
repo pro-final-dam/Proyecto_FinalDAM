@@ -1,0 +1,63 @@
+﻿@page "/proyectos-ruben/java-swing"
+@page "/java-swing"
+@inject NavigationManager Navigation
+
+<PageTitle>Proyecto Java/Swing - Sopa de Letras</PageTitle>
+
+<Lightbox @ref="myLightbox" />
+
+<div class="container py-4">
+    <h4 class="mb-4 project-title">Sopa de Letras</h4>
+
+    <p class="project-description">
+        Este fue un proyecto fundamental en 1o de DAM, disenado para afianzar los conceptos basicos de Programacion Orientada a Objetos (POO) y el desarrollo de interfaces de escritorio simples usando Java Swing.
+    </p>
+
+    <h2 class="h5 mt-4 mb-3">Tecnologias y conceptos clave demostrados:</h2>
+    <ul class="key-points-list">
+        <li>
+            <span class="bi bi-file-earmark-code-fill me-2 text-info"></span>
+            <strong>Estructura de codigo profesional:</strong> uso de clases, paquetes y modulos en Eclipse, con organizacion limpia y escalable.
+        </li>
+        <li>
+            <span class="bi bi-diagram-3-fill me-2 text-success"></span>
+            <strong>POO:</strong> modelado de la logica del juego (tablero, palabras y celdas) mediante clases y objetos.
+        </li>
+        <li>
+            <span class="bi bi-grid-fill me-2 text-primary"></span>
+            <strong>GUI con Swing:</strong> implementacion de la interfaz con un array bidimensional de botones <code>JButton[10][10]</code>.
+        </li>
+        <li>
+            <span class="bi bi-puzzle-fill me-2 text-warning"></span>
+            <strong>Colocacion y solapamiento:</strong> algoritmos para insertar palabras en horizontal, vertical y diagonal.
+        </li>
+    </ul>
+
+    <h2 class="h5 mt-5 mb-3">Capturas de la interfaz:</h2>
+    <div class="row g-2">
+        @for (int i = 1; i <= 4; i++)
+        {
+            var imageUrl = $"{Navigation.BaseUri}images/projects/ruben/java-swing/sopa_{i}.png";
+            var description = $"Captura {i} de la Sopa de Letras con Java Swing";
+
+            <div class="col-6 col-md-3">
+                <img src="@imageUrl"
+                     alt="@description"
+                     class="img-fluid project-thumb"
+                     @onclick="() => myLightbox.Show(imageUrl, description)"
+                     style="width: 100%; height: auto; max-height: 200px; object-fit: cover; cursor: pointer;" />
+            </div>
+        }
+    </div>
+
+    <div class="mt-4">
+        <a class="portfolio-button portfolio-button--ghost" href="@($"{Navigation.BaseUri}proyectos-ruben")">
+            Volver a informacion de Ruben
+        </a>
+    </div>
+</div>
+
+@code {
+    private Lightbox myLightbox = default!;
+}
+

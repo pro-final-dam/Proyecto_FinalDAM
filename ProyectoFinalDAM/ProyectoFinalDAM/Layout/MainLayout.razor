@@ -1,40 +1,38 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    @* Menú lateral oscuro (se controla desde NavMenu.razor) *@
     <div class="sidebar">
         <NavMenu />
     </div>
 
     <main>
-        @* CABECERA DUAL: Rubén & Javier (Estilo CV) *@
-        <div class="container-fluid p-0">
-            <div class="row g-0 align-items-center text-white shadow-sm" style="background-color: #0d6efd; min-height: 110px;">
-
-                <div class="col-6 d-flex align-items-center justify-content-center p-3 border-end border-white border-opacity-25">
-                    <img src="images/ruben.jpg" class="rounded-circle border border-2 border-white me-3"
-                         style="width: 75px; height: 75px; object-fit: cover;" alt="Rubén" />
-                    <div class="d-none d-md-block">
-                        <h5 class="mb-0 fw-bold">Rubén Martín</h5>
-                        <p class="mb-0 opacity-75" style="font-size: 0.9rem;">Estudiante DAM</p>
-                    </div>
+        <div class="profile-switch">
+            <NavLink class="profile-switch__item" ActiveClass="profile-switch__item--active" href="proyectos-ruben">
+                <img src="images/profiles/ruben.jpg" alt="Rubén Martín" class="profile-switch__avatar" />
+                <div class="profile-switch__text">
+                    <span class="profile-switch__name">Rubén Martín</span>
+                    <span class="profile-switch__role">
+                        <span class="bi bi-telephone-fill" aria-hidden="true"></span>
+                        +34 622 045 103
+                    </span>
                 </div>
+            </NavLink>
 
-                <div class="col-6 d-flex align-items-center justify-content-center p-3">
-                    <img src="images/javi.jpeg" class="rounded-circle border border-2 border-white me-3"
-                         style="width: 75px; height: 75px; object-fit: cover;" alt="Javi" />
-                    <div class="d-none d-md-block">
-                        <h5 class="mb-0 fw-bold">Javier Canales</h5>
-                        <p class="mb-0 opacity-75" style="font-size: 0.9rem;">Estudiante DAM</p>
-                    </div>
+            <NavLink class="profile-switch__item" ActiveClass="profile-switch__item--active" href="proyectos-javier">
+                <img src="images/profiles/javi.jpeg" alt="Javier Canales" class="profile-switch__avatar" />
+                <div class="profile-switch__text">
+                    <span class="profile-switch__name">Javier Canales</span>
+                    <span class="profile-switch__role">
+                        <span class="bi bi-telephone-fill" aria-hidden="true"></span>
+                        +34 616 338 551
+                    </span>
                 </div>
-
-            </div>
+            </NavLink>
         </div>
 
-        @* CONTENIDO PRINCIPAL *@
-        <article class="content px-4 py-3">
+        <article class="content">
             @Body
         </article>
     </main>
 </div>
+

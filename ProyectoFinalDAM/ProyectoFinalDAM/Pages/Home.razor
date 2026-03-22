@@ -1,7 +1,32 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Inicio | Pro Final DAM</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="home-shell">
+    <section class="home-hero">
+        <h1>Portfolio colaborativo del Proyecto Final DAM</h1>
+        <p>
+            Selecciona un perfil para ver su informacion y proyectos.
+        </p>
+    </section>
 
-Welcome to your new app.
+    <section class="home-cards">
+        <NavLink class="home-card" href="proyectos-ruben">
+            <img src="images/profiles/ruben.jpg" alt="Ruben Martin" />
+            <div>
+                <h2>Ruben Martin</h2>
+                <p>Añadir descripción</p>
+            </div>
+        </NavLink>
+
+        <NavLink class="home-card" href="proyectos-javier">
+            <img src="images/profiles/javi.jpeg" alt="Javier Canales" />
+            <div>
+                <h2>Javier Canales</h2>
+                <p>Full-stack en .NET, Soluciones en vision artificial.</p>
+            </div>
+        </NavLink>
+    </section>
+</div>
+
+

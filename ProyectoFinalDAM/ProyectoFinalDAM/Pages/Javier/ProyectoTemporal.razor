@@ -1,0 +1,27 @@
+@page "/proyectos-javier/proyecto-temporal"
+@page "/proyecto-temporal"
+@inject NavigationManager Navigation
+
+<PageTitle>Javier | Proyecto temporal</PageTitle>
+
+<div class="portfolio-page portfolio-javier">
+    <section class="portfolio-hero">
+        <div class="portfolio-hero__badge">Proyecto</div>
+        <h1>proyecto-temporal</h1>
+        <p>Espacio reservado para la futura informacion de proyectos de Javier.</p>
+    </section>
+
+    <section class="portfolio-grid">
+        <article class="portfolio-card portfolio-card--full">
+            <h2>Estado</h2>
+            <p>En preparacion. Se completara con descripcion funcional, stack tecnico, capturas y enlaces cuando este disponible.</p>
+        </article>
+
+        <article class="portfolio-card">
+            <h2>Accion</h2>
+            <ul class="portfolio-list">
+                <li><a href="@($"{Navigation.BaseUri}proyectos-javier")">Volver a informacion de Javier</a></li>
+            </ul>
+        </article>
+    </section>
+</div>

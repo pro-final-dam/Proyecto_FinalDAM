@@ -1,0 +1,49 @@
+@if (IsVisible)
+{
+    <div class="modal-backdrop" @onclick="CloseModal"></div>
+
+    <div class="modal-content-custom" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+        <div class="d-flex justify-content-end">
+            <button class="btn-close btn-close-white" type="button" @onclick="CloseModal" title="Cerrar"></button>
+        </div>
+
+        <img src="@FullImageUrl" alt="@ImageAlt" class="img-fluid" />
+
+        @if (!string.IsNullOrWhiteSpace(Description))
+        {
+            <div class="caption mt-2 p-2 text-white">@Description</div>
+        }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public bool IsVisible { get; set; }
+
+    [Parameter]
+    public string FullImageUrl { get; set; } = "images/placeholder.jpg";
+
+    [Parameter]
+    public string ImageAlt { get; set; } = "Imagen de proyecto ampliada";
+
+    [Parameter]
+    public string Description { get; set; } = "";
+
+    [Parameter]
+    public EventCallback OnClose { get; set; }
+
+    public void Show(string url, string description)
+    {
+        FullImageUrl = url;
+        Description = description;
+        ImageAlt = description;
+        IsVisible = true;
+        StateHasChanged();
+    }
+
+    private async Task CloseModal()
+    {
+        IsVisible = false;
+        await OnClose.InvokeAsync();
+    }
+}

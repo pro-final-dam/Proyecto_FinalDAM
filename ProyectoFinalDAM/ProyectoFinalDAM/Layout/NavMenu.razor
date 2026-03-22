@@ -1,6 +1,6 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">PROYECTO FINAL</a>
+        <a class="navbar-brand" href="">PROYECTO FINAL DAM</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -9,35 +9,51 @@
 
 <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
     <nav class="flex-column">
+        <div class="ps-4 py-2 text-white-50 small fw-bold text-uppercase">
+            Navegacion
+        </div>
 
-        <div class="nav-item px-3 mt-2">
+        <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-cpu-fill me-2" aria-hidden="true"></span> SOBRE BLAZOR
+                <span class="bi bi-house-door-fill me-2" aria-hidden="true"></span> Inicio
             </NavLink>
         </div>
 
         <hr class="text-white opacity-25 mx-3" />
 
         <div class="ps-4 py-2 text-white-50 small fw-bold text-uppercase">
-            Proyectos Rubén
+            Ruben
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="proyectos-ruben">
-                <span class="bi bi-code-slash me-2" aria-hidden="true"></span> Mis Desarrollos
+                <span class="bi bi-person-badge-fill me-2" aria-hidden="true"></span> Informacion y proyectos
             </NavLink>
+        </div>
+        <div class="nav-subitems">
+            <div class="nav-item nav-item--secondary px-3">
+                <NavLink class="nav-link nav-link--secondary" href="java-swing">
+                    <span class="bi bi-chevron-right me-2" aria-hidden="true"></span> JavaSwing
+                </NavLink>
+            </div>
         </div>
 
         <hr class="text-white opacity-25 mx-3" />
 
         <div class="ps-4 py-2 text-white-50 small fw-bold text-uppercase">
-            Proyectos Javier
+            Javier
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="proyectos-javier">
-                <span class="bi bi-terminal-fill me-2" aria-hidden="true"></span> Mis Desarrollos
+                <span class="bi bi-person-badge-fill me-2" aria-hidden="true"></span> Informacion y proyectos
             </NavLink>
         </div>
-
+        <div class="nav-subitems">
+            <div class="nav-item nav-item--secondary px-3">
+                <NavLink class="nav-link nav-link--secondary" href="proyecto-temporal">
+                    <span class="bi bi-chevron-right me-2" aria-hidden="true"></span> Temporal
+                </NavLink>
+            </div>
+        </div>
     </nav>
 </div>
 

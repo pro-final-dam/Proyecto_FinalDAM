@@ -2,47 +2,193 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    background: #ffffff;
 }
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background: linear-gradient(180deg, #0f2741 0%, #0b1d2f 100%);
+    position: sticky;
+    top: 0;
+    z-index: 30;
 }
 
-.top-row {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
+.profile-switch {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.55rem;
+    padding: 0.7rem;
+    background: linear-gradient(90deg, #083a7e 0%, #0a4f9b 100%);
+    border-bottom: 1px solid rgba(210, 232, 255, 0.3);
+}
+
+.profile-switch__item {
     display: flex;
     align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+    padding: 0.7rem 0.8rem;
+    border-radius: 10px;
+    color: #f5f9ff;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
+.profile-switch__item,
+.profile-switch__item:link,
+.profile-switch__item:visited,
+.profile-switch__item:hover,
+.profile-switch__item:focus,
+.profile-switch__item:active,
+.profile-switch__item.active,
+.profile-switch__item--active {
+    text-decoration: none !important;
+}
+
+.profile-switch ::deep a.profile-switch__item,
+.profile-switch ::deep a.profile-switch__item:link,
+.profile-switch ::deep a.profile-switch__item:visited,
+.profile-switch ::deep a.profile-switch__item:hover,
+.profile-switch ::deep a.profile-switch__item:focus,
+.profile-switch ::deep a.profile-switch__item:active,
+.profile-switch ::deep a.profile-switch__item.active,
+.profile-switch ::deep a.profile-switch__item.profile-switch__item--active {
+    text-decoration: none !important;
+    color: #f5f9ff !important;
+}
+
+.profile-switch ::deep a.profile-switch__item {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.profile-switch__item:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+}
+
+.profile-switch__item:visited {
+    color: #f5f9ff;
+}
+
+.profile-switch__item.active {
+    background: linear-gradient(90deg, rgba(176, 218, 255, 0.34) 0%, rgba(139, 198, 251, 0.32) 100%);
+    color: #f5f9ff;
+    box-shadow: none;
+}
+
+.profile-switch ::deep a.profile-switch__item.active {
+    background: linear-gradient(90deg, rgba(176, 218, 255, 0.34) 0%, rgba(139, 198, 251, 0.32) 100%) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.profile-switch ::deep a.profile-switch__item.profile-switch__item--active {
+    background: linear-gradient(90deg, rgba(176, 218, 255, 0.34) 0%, rgba(139, 198, 251, 0.32) 100%) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.profile-switch ::deep a.profile-switch__item:focus,
+.profile-switch ::deep a.profile-switch__item:focus-visible {
+    outline: none !important;
+}
+
+.profile-switch__avatar {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    flex-shrink: 0;
+}
+
+.profile-switch__item.active .profile-switch__avatar {
+    border-color: #d7ecff;
+}
+
+.profile-switch ::deep a.profile-switch__item.profile-switch__item--active .profile-switch__avatar {
+    border-color: #d7ecff !important;
+}
+
+.profile-switch__text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.profile-switch__name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.profile-switch ::deep .profile-switch__name,
+.profile-switch ::deep .profile-switch__role {
+    text-decoration: none !important;
+}
+
+.profile-switch__role {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.78rem;
+    color: rgba(233, 244, 255, 0.95);
+    text-decoration: none !important;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: clip;
+}
+
+.profile-switch__item.active .profile-switch__role {
+    color: rgba(233, 244, 255, 0.95);
+}
+
+.profile-switch ::deep a.profile-switch__item.profile-switch__item--active .profile-switch__role {
+    color: rgba(233, 244, 255, 0.95) !important;
+}
+
+.content {
+    width: 100%;
+    padding: 1.1rem 1rem 1.75rem;
+    background: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .profile-switch {
+        grid-template-columns: 1fr;
     }
 
-    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
-        text-decoration: underline;
+    .profile-switch__item {
+        padding: 0.65rem 0.75rem;
     }
 
-    .top-row ::deep a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
+    .profile-switch__avatar {
+        width: 48px;
+        height: 48px;
     }
 
-@media (max-width: 640.98px) {
-    .top-row {
-        justify-content: space-between;
+    .profile-switch__name {
+        font-size: 0.9rem;
     }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        margin-left: 0;
+    .profile-switch__role {
+        white-space: normal;
+        line-height: 1.2;
     }
 }
 
@@ -52,26 +198,11 @@ main {
     }
 
     .sidebar {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
+        width: 260px;
+        min-height: 100vh;
     }
 
-    .top-row {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row, article {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
+    .content {
+        padding: 1.4rem 1.8rem 2rem;
     }
 }

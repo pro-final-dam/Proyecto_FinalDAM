@@ -1,0 +1,142 @@
+﻿@page "/proyectos-javier"
+@inject NavigationManager Navigation
+
+<PageTitle>Javier Canales | Curriculum</PageTitle>
+
+<div class="portfolio-page portfolio-javier">
+    <section class="portfolio-hero">
+        <div class="portfolio-hero__badge">Curriculum</div>
+        <h1>Javier Canales</h1>
+    </section>
+
+    <section class="portfolio-grid">
+        <article class="portfolio-card">
+            <h2>Experiencia laboral</h2>
+            <div class="cv-timeline">
+                <div class="cv-item">
+                    <div class="cv-head">
+                        <img class="cv-company-logo" src="images/logos/bcnvision.ico" alt="Logo Grupo Bcnvision" />
+                        <div>
+                            <h3>Back Office Engineer</h3>
+                            <p class="cv-company">Grupo Bcnvision - Vision artificial</p>
+                        </div>
+                    </div>
+                    <p class="cv-meta">ene 2025 - actual</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-head">
+                        <img class="cv-company-logo" src="images/logos/orbita.png" alt="Logo Orbita Ingenieria" />
+                        <div>
+                            <h3>Ingeniero de proyectos vision e inteligencia artificial</h3>
+                            <p class="cv-company">Orbita Ingenieria S.L.</p>
+                        </div>
+                    </div>
+                    <p class="cv-meta">abr 2024 - dic 2024</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-head">
+                        <img class="cv-company-logo" src="images/logos/bcnvision.ico" alt="Logo Grupo Bcnvision" />
+                        <div>
+                            <h3>Vision Engineer</h3>
+                            <p class="cv-company">Grupo Bcnvision - Vision artificial</p>
+                        </div>
+                    </div>
+                    <p class="cv-meta">nov 2023 - abr 2024</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-head">
+                        <img class="cv-company-logo" src="images/logos/orbita.png" alt="Logo Orbita Ingenieria" />
+                        <div>
+                            <h3>Ingeniero de proyectos vision e inteligencia artificial</h3>
+                            <p class="cv-company">Orbita Ingenieria S.L.</p>
+                        </div>
+                    </div>
+                    <p class="cv-meta">mar 2022 - oct 2023</p>
+                </div>
+
+                <div class="cv-item">
+                    <div class="cv-head">
+                        <img class="cv-company-logo" src="images/logos/ford.svg" alt="Logo Ford Motor Company" />
+                        <div>
+                            <h3>Production, Maintenance and Quality Control</h3>
+                            <p class="cv-company">Ford Motor Company</p>
+                        </div>
+                    </div>
+                    <p class="cv-meta">jun 2014 - jun 2021</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="portfolio-card">
+            <h2>Habilidades</h2>
+            <ul class="portfolio-list">
+                <li>Vision artificial: OpenCV, MVTec Halcon, Cognex.</li>
+                <li>IA aplicada: TensorFlow, PyTorch, Keras.</li>
+                <li>Deteccion y OCR: YOLO, Tesseract, PaddleOCR.</li>
+                <li>Desarrollo tecnico: Python, C#, SQL.</li>
+            </ul>
+        </article>
+
+        <article class="portfolio-card">
+            <h2>Educacion</h2>
+            <ul class="portfolio-list">
+                <li>Master en Inteligencia Artificial - VIU (2021 - 2023)</li>
+                <li>Grado en Ingenieria Industrial - UPV (2016 - 2021)</li>
+                <li>CFGS Mecatronica Industrial - Ford Almussafes (2012 - 2014)</li>
+                <li>CFGS Proyectos de Construccion - CIPFP Cheste (2010 - 2012)</li>
+            </ul>
+        </article>
+
+        <article class="portfolio-card portfolio-card--full">
+            <h2>Proyecto</h2>
+            <div class="portfolio-table-wrap">
+                <table class="portfolio-table">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Proyecto</th>
+                            <th>Descripcion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="project-row-link">
+                            <td data-label="Imagen">
+                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}proyecto-temporal")">
+                                    <img class="portfolio-thumb" src="images/projects/common/project-placeholder.svg" alt="Imagen generica de proyecto" />
+                                </a>
+                            </td>
+                            <td data-label="Proyecto">
+                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}proyecto-temporal")">proyecto-temporal</a>
+                            </td>
+                            <td data-label="Descripcion">
+                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}proyecto-temporal")">Proyecto temporal vacio. Pulsa la fila para ver su pagina dedicada.</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+
+    <footer class="social-footer">
+        <a class="social-link" href="https://www.linkedin.com/in/javier-c-156050219/" target="_blank" rel="noopener noreferrer">
+            <span class="bi bi-linkedin" aria-hidden="true"></span> LinkedIn
+        </a>
+        <a class="social-link" href="https://github.com/Javicana" target="_blank" rel="noopener noreferrer">
+            <span class="bi bi-github" aria-hidden="true"></span> GitHub
+        </a>
+        <span class="social-link social-link--muted">
+            <span class="bi bi-facebook" aria-hidden="true"></span> Facebook (pendiente)
+        </span>
+        <a class="social-link" href="mailto:javier.canales@bcnvisiongroup.com">
+            <span class="bi bi-envelope-fill" aria-hidden="true"></span> Email
+        </a>
+        <span class="social-link social-link--text">
+            <span class="bi bi-geo-alt-fill" aria-hidden="true"></span> Comunidad Valenciana / Comunitat Valenciana, Espana
+        </span>
+    </footer>
+</div>
+

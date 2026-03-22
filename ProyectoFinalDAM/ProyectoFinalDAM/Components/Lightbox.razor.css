@@ -1,0 +1,55 @@
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1050;
+    touch-action: pan-y;
+}
+
+.modal-content-custom {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 95vw;
+    max-height: 95vh;
+    padding: 10px;
+    background: #111111;
+    border-radius: 12px;
+    z-index: 1051;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-custom img {
+    max-height: 85vh;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1060;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+.btn-close-white {
+    filter: invert(1);
+}
