@@ -1,0 +1,266 @@
+﻿@page "/analisis-elt"
+@using ProyectoFinalDAM.Models
+@using Plotly.Blazor
+@using Plotly.Blazor.Traces
+@using Plotly.Blazor.Traces.BarLib
+@inject HttpClient Http
+
+<PageTitle>Analítica ELT - Ruben</PageTitle>
+
+<div class="container-fluid mt-3 px-3">
+    <div class="header-section mb-4 d-flex justify-content-between align-items-center bg-light p-3 rounded-3 shadow-sm">
+        <h2 class="fw-bold mb-0">Dashboard de Ventas (ELT Python + DuckDB)</h2>
+        <button class="btn btn-outline-info shadow-sm" data-bs-toggle="modal" data-bs-target="#modalDetalles">
+            <i class="bi bi-info-circle-fill"></i> Detalles del Proyecto
+        </button>
+    </div>
+    <div class="row mb-4 align-items-end">
+        <div class="col-md-6">
+            <label class="form-label fw-bold text-primary">
+                <i class="bi bi-search"></i> Seleccionar tienda para ver detalle:
+            </label>
+            <select class="form-select shadow-sm" @onchange="OnTiendaSelected">
+                <option value="">-- Mostrar Top 10 Ventas Anuales --</option>
+                @if (tiendas != null)
+                {
+                    @foreach (var t in tiendas.OrderBy(t => t.nombre_tienda))
+                    {
+                        <option value="@t.codigo_tienda">@t.nombre_tienda (@t.ciudad)</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="col-md-6 text-end">
+            @if (string.IsNullOrEmpty(tiendaSeleccionada))
+            {
+                <div class="btn-group shadow-sm" role="group">
+                    <button type="button" class="btn btn-primary @(tipoGrafica == "barras" ? "active" : "")" @onclick='() => CambiarTipoGrafica("barras")'>
+                        <i class="bi bi-bar-chart-fill"></i> Columnas
+                    </button>
+                    <button type="button" class="btn btn-primary @(tipoGrafica == "quesito" ? "active" : "")" @onclick='() => CambiarTipoGrafica("quesito")'>
+                        <i class="bi bi-pie-chart-fill"></i> Quesito
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0 rounded-3 p-3 mb-4">
+        @if (tiendas == null)
+        {
+            <div class="text-center py-5">
+                <div class="spinner-border text-primary" role="status"></div>
+                <p class="mt-2 text-muted">Cargando datos del ELT...</p>
+            </div>
+        }
+        else
+        {
+            <div style="height: 65vh; overflow: hidden;">
+                <PlotlyChart Id="GraficaVentas" Config="config" Layout="layout" Data="data" @ref="chart" />
+            </div>
+        }
+    </div>
+</div>
+<div class="modal fade" id="modalDetalles" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Justificación Técnica: Ecosistema ELT Moderno</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-primary border-bottom pb-2">Arquitectura del Sistema: ELT con DuckDB y Blazor</h3>
+                        <p class="lead">
+                            Este proyecto no es solo una visualización; es un <b>pipeline de datos completo</b> diseñado bajo estándares modernos de ingeniería de datos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded bg-light h-100">
+                            <h4 class="fw-bold"><i class="bi bi-arrow-up-right-circle"></i> 1. Escalabilidad Dinámica</h4>
+                            <p>La arquitectura está preparada para el crecimiento orgánico de la empresa sin modificar una sola línea de código en el frontend:</p>
+                            <ul>
+                                <li><b>Ingesta Masiva:</b> El script de Python escanea la carpeta <code>/raw</code> de forma recursiva.</li>
+                                <li><b>Plug & Play:</b> Basta con soltar nuevos archivos <code>.xlsx</code>, <code>.json</code> o <code>.db</code> (SQLite) en sus carpetas correspondientes.</li>
+                                <li><b>Automatización:</b> Al ejecutar el motor ELT, DuckDB unifica las fuentes, aplica las reglas de negocio y regenera el dataset final instantáneamente.</li>
+                                <li><b>Independencia de Formato:</b> El sistema abstrae la complejidad de la fuente original, entregando siempre un contrato de datos limpio a Blazor.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded bg-light h-100">
+                            <h4 class="fw-bold"><i class="bi bi-shield-check"></i> 2. Persistencia y Seguridad</h4>
+                            <p>Hemos implementado una estrategia de redundancia para garantizar la integridad de la información:</p>
+                            <ul>
+                                <li><b>Almacenamiento Dual:</b> Los datos transformados no solo se exportan, sino que persisten en la base de datos <b>DuckDB</b>, optimizada para consultas analíticas pesadas.</li>
+                                <li><b>Backup de Consumo:</b> La generación del archivo <code>tiendas_final.json</code> actúa como una <b>copia de seguridad de alta disponibilidad</b>.</li>
+                                <li><b>Aislamiento:</b> Si la base de datos principal estuviera en mantenimiento, el frontend puede seguir operando con el último snapshot JSON generado.</li>
+                                <li><b>Trazabilidad:</b> Al mantener los <i>raw data</i> originales, siempre es posible auditar el origen de una cifra de ventas específica.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h4 class="fw-bold text-secondary">¿Por qué esta solución es superior?</h4>
+                        <div class="alert alert-info">
+                            <ul class="mb-0">
+                                <li><b>Eficiencia de Costes:</b> Sustituimos licencias costosas de herramientas como <b>Informatica PowerCenter</b> o <b>QlikView</b> por un stack Open Source (Python/DuckDB) de alto rendimiento.</li>
+                                <li><b>Rendimiento OLAP:</b> DuckDB procesa las transformaciones mediante ejecución vectorial, siendo hasta 100 veces más rápido que bases de datos transaccionales tradicionales para este volumen de datos.</li>
+                                <li><b>Portabilidad Total:</b> Gracias a <b>Blazor WebAssembly</b>, el dashboard se despliega de forma estática en <b>GitHub Pages</b>, eliminando la necesidad de costosos servidores de aplicaciones.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h4 class="fw-bold">Evidencias del Pipeline de Datos</h4>
+                        <pre class="bg-dark text-success p-3 rounded shadow-sm"><code># Fragmento del corazón del proceso (Extracción Multiformato)
+with open("tiendas_norte.json", "r") as f: registros_norte = json.load(f)
+df_sur = pd.read_excel("tiendas_sur.xlsx")
+src_cur.execute("SELECT * FROM tiendas_centro") # Conexión a SQLite</code></pre>
+                    </div>
+                </div>
+
+                <h4 class="text-center my-4 border-top pt-4">Flujo Visual del Proceso ELT</h4>
+                <div class="row text-center pb-5">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/profiles/datos_crudos.png" class="card-img-top p-2" alt="Extracción" />
+                            <div class="card-body">
+                                <p class="card-text fw-bold">E: Extracción (Raw Data)</p>
+                                <p class="small text-muted">Orígenes heterogéneos: Excel, SQL y JSON.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/profiles/carga_transformacion.png" class="card-img-top p-2" alt="Carga" />
+                            <div class="card-body">
+                                <p class="card-text fw-bold">L: Carga en DuckDB</p>
+                                <p class="small text-muted">Ingesta en BD analítica de alto rendimiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/profiles/salida_json.png" class="card-img-top p-2" alt="Transformación" />
+                            <div class="card-body">
+                                <p class="card-text fw-bold">T: Transformación y Salida</p>
+                                <p class="small text-muted">Generación del JSON final para Blazor.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-modal="modal" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<Tienda>? tiendas = null;
+    private string tiendaSeleccionada = "";
+    private string tipoGrafica = "barras"; // Por defecto
+    PlotlyChart? chart;
+
+    // Configuración y Layout (Mantenemos tu estilo minimalista)
+    Config config = new Config { Responsive = true };
+    Layout layout = new Layout
+    {
+        PaperBgColor = "rgba(0,0,0,0)",
+        PlotBgColor = "rgba(0,0,0,0)",
+        // CORRECCIÓN: Usar LayoutLib.Margin en vez de Plotly.Blazor.Margin
+        Margin = new Plotly.Blazor.LayoutLib.Margin { B = 100, T = 50, L = 80, R = 50 }
+    };
+    List<ITrace> data = new List<ITrace>();
+
+    private async Task CambiarTipoGrafica(string tipo)
+    {
+        tipoGrafica = tipo;
+        await CargarTop10();
+    }
+
+    private async Task OnTiendaSelected(ChangeEventArgs e)
+    {
+        tiendaSeleccionada = e.Value?.ToString() ?? "";
+
+        if (string.IsNullOrEmpty(tiendaSeleccionada))
+        {
+            await CargarTop10();
+            return;
+        }
+
+        var tienda = tiendas?.FirstOrDefault(t => t.codigo_tienda == tiendaSeleccionada);
+        if (tienda != null && tienda.ventas_mes != null)
+        {
+            data.Clear();
+            layout.Title = new Plotly.Blazor.LayoutLib.Title { Text = $"Evolución: {tienda.nombre_tienda}" };
+
+            // TU SUGERENCIA: Concatenamos Mes + Salto de línea + Valor para el eje X
+            var etiquetasX = tienda.ventas_mes.Select(kv => (object)$"{kv.Key}<br>{kv.Value:N0}€").ToList();
+            var valoresY = tienda.ventas_mes.Values.Select(v => (object)v).ToList();
+
+            data.Add(new Scatter
+            {
+                X = etiquetasX,
+                Y = valoresY,
+                Mode = Plotly.Blazor.Traces.ScatterLib.ModeFlag.Lines | Plotly.Blazor.Traces.ScatterLib.ModeFlag.Markers,
+                Line = new Plotly.Blazor.Traces.ScatterLib.Line { Color = "#ff7f0e", Width = 3 },
+                Marker = new Plotly.Blazor.Traces.ScatterLib.Marker { Size = 10, Color = "#1f77b4" }
+            });
+
+            if (chart != null) await chart.React();
+        }
+    }
+
+    private async Task CargarTop10()
+    {
+        if (tiendas == null) return;
+        data.Clear();
+        var top10 = tiendas.OrderByDescending(t => t.ventas_anuales).Take(10).ToList();
+
+        if (tipoGrafica == "barras")
+        {
+            layout.Title = new Plotly.Blazor.LayoutLib.Title { Text = "Top 10 Ventas por Tienda" };
+            data.Add(new Bar
+            {
+                X = top10.Select(t => (object)t.nombre_tienda!).ToList(),
+                Y = top10.Select(t => (object)t.ventas_anuales).ToList(),
+                Marker = new Plotly.Blazor.Traces.BarLib.Marker
+                {
+                    Color = new List<object> { "#1f77b4", "#2ca02c", "#d62728", "#ff7f0e", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf" }
+                }
+            });
+        }
+        else
+        {
+            layout.Title = new Plotly.Blazor.LayoutLib.Title { Text = "Distribución de Ventas (Top 10)" };
+            data.Add(new Pie
+            {
+                Labels = top10.Select(t => (object)t.nombre_tienda!).ToList(),
+                Values = top10.Select(t => (object)t.ventas_anuales).ToList(),
+                Hole = (decimal?)0.4, // Conversión explícita de double a decimal?
+                Marker = new Plotly.Blazor.Traces.PieLib.Marker
+                {
+                    Colors = new List<object> { "#1f77b4", "#2ca02c", "#d62728", "#ff7f0e", "#9467bd" }
+                }
+            });
+        }
+        if (chart != null) await chart.React();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        tiendas = await Http.GetFromJsonAsync<List<Tienda>>("sample-data/tiendas_final.json");
+        await CargarTop10();
+    }
+}
