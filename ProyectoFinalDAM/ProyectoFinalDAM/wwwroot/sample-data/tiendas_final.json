@@ -1,0 +1,1202 @@
+[
+    {
+        "codigo_tienda": "C017",
+        "nombre_tienda": "La Vitrina C017",
+        "ciudad": "Albacete",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 10862.77,
+            "febrero": 7845.93,
+            "marzo": 11393.49,
+            "abril": 12977.37,
+            "mayo": 6011.85,
+            "junio": 11868.78,
+            "julio": 10714.8,
+            "agosto": 13307.31,
+            "septiembre": 14285.12,
+            "octubre": 6913.74,
+            "noviembre": 9319.7,
+            "diciembre": 13996.67
+        }
+    },
+    {
+        "codigo_tienda": "S001",
+        "nombre_tienda": "La Vitrina S001",
+        "ciudad": "Almería",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 6951.52,
+            "febrero": 10248.14,
+            "marzo": 14739.22,
+            "abril": 7284.92,
+            "mayo": 7264.2,
+            "junio": 12548.28,
+            "julio": 14745.9,
+            "agosto": 12514.04,
+            "septiembre": 10558.08,
+            "octubre": 14456.76,
+            "noviembre": 8968.96,
+            "diciembre": 9532.65
+        }
+    },
+    {
+        "codigo_tienda": "S013",
+        "nombre_tienda": "La Vitrina S013",
+        "ciudad": "Almería",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 9876.57,
+            "febrero": 11970.2,
+            "marzo": 6309.37,
+            "abril": 5898.41,
+            "mayo": 7642.64,
+            "junio": 6898.05,
+            "julio": 8171.83,
+            "agosto": 7823.11,
+            "septiembre": 10278.45,
+            "octubre": 11723.99,
+            "noviembre": 6609.3,
+            "diciembre": 12866.79
+        }
+    },
+    {
+        "codigo_tienda": "S011",
+        "nombre_tienda": "La Casa S011",
+        "ciudad": "Almería",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 8200.14,
+            "febrero": 14687.98,
+            "marzo": 12055.87,
+            "abril": 8811.32,
+            "mayo": 5135.5,
+            "junio": 11808.14,
+            "julio": 11955.69,
+            "agosto": 11057.21,
+            "septiembre": 13193.37,
+            "octubre": 11569.82,
+            "noviembre": 6845.04,
+            "diciembre": 14657.08
+        }
+    },
+    {
+        "codigo_tienda": "N002",
+        "nombre_tienda": "El Portal N002",
+        "ciudad": "Bilbao",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 10936.11,
+            "febrero": 7648.14,
+            "marzo": 5803.91,
+            "abril": 13066.17,
+            "mayo": 8408.92,
+            "junio": 14158.77,
+            "julio": 13389.27,
+            "agosto": 7152.57,
+            "septiembre": 14057.34,
+            "octubre": 8503.85,
+            "noviembre": 9931.69,
+            "diciembre": 5743.17
+        }
+    },
+    {
+        "codigo_tienda": "N001",
+        "nombre_tienda": "El Estudio N001",
+        "ciudad": "Bilbao",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 10450.02,
+            "febrero": 12802.68,
+            "marzo": 10592.39,
+            "abril": 8052.88,
+            "mayo": 8191.25,
+            "junio": 11066.12,
+            "julio": 8013.03,
+            "agosto": 13396.41,
+            "septiembre": 14507.09,
+            "octubre": 12744.86,
+            "noviembre": 11621.48,
+            "diciembre": 10310.62
+        }
+    },
+    {
+        "codigo_tienda": "N008",
+        "nombre_tienda": "La Tienda N008",
+        "ciudad": "Burgos",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 11766.64,
+            "febrero": 11148.61,
+            "marzo": 10227.67,
+            "abril": 8109.37,
+            "mayo": 7631.94,
+            "junio": 14767.73,
+            "julio": 14355.27,
+            "agosto": 6311.24,
+            "septiembre": 10121.04,
+            "octubre": 7024.44,
+            "noviembre": 11346.37,
+            "diciembre": 14607.44
+        }
+    },
+    {
+        "codigo_tienda": "C009",
+        "nombre_tienda": "La Base C009",
+        "ciudad": "Cuenca",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 12797.24,
+            "febrero": 8207.61,
+            "marzo": 6669.64,
+            "abril": 11298.49,
+            "mayo": 12506.4,
+            "junio": 14183.1,
+            "julio": 5554.55,
+            "agosto": 8623.31,
+            "septiembre": 13705.52,
+            "octubre": 9243.21,
+            "noviembre": 6786.63,
+            "diciembre": 9459.87
+        }
+    },
+    {
+        "codigo_tienda": "C002",
+        "nombre_tienda": "La Central C002",
+        "ciudad": "Cuenca",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 11963.82,
+            "febrero": 8534.58,
+            "marzo": 9652.79,
+            "abril": 9676.69,
+            "mayo": 7309.0,
+            "junio": 7649.78,
+            "julio": 9164.28,
+            "agosto": 10270.33,
+            "septiembre": 10119.74,
+            "octubre": 11308.04,
+            "noviembre": 12304.68,
+            "diciembre": 12868.25
+        }
+    },
+    {
+        "codigo_tienda": "C020",
+        "nombre_tienda": "La Firma C020",
+        "ciudad": "Cáceres",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 12626.49,
+            "febrero": 8337.14,
+            "marzo": 10028.81,
+            "abril": 14425.66,
+            "mayo": 10449.13,
+            "junio": 10799.21,
+            "julio": 10278.83,
+            "agosto": 8529.5,
+            "septiembre": 11479.96,
+            "octubre": 14565.07,
+            "noviembre": 9449.22,
+            "diciembre": 6899.7
+        }
+    },
+    {
+        "codigo_tienda": "C003",
+        "nombre_tienda": "El Portal C003",
+        "ciudad": "Cáceres",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 5426.08,
+            "febrero": 9723.87,
+            "marzo": 12083.8,
+            "abril": 7749.1,
+            "mayo": 7942.78,
+            "junio": 7512.94,
+            "julio": 11307.74,
+            "agosto": 10012.72,
+            "septiembre": 10100.45,
+            "octubre": 11971.51,
+            "noviembre": 6035.54,
+            "diciembre": 11677.46
+        }
+    },
+    {
+        "codigo_tienda": "C007",
+        "nombre_tienda": "El Almacén C007",
+        "ciudad": "Cáceres",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 8903.79,
+            "febrero": 10852.26,
+            "marzo": 7953.59,
+            "abril": 5326.0,
+            "mayo": 9269.4,
+            "junio": 12989.04,
+            "julio": 8534.76,
+            "agosto": 10749.15,
+            "septiembre": 9978.26,
+            "octubre": 6985.23,
+            "noviembre": 9597.44,
+            "diciembre": 8958.28
+        }
+    },
+    {
+        "codigo_tienda": "S019",
+        "nombre_tienda": "La Vitrina S019",
+        "ciudad": "Cádiz",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 14238.47,
+            "febrero": 6328.31,
+            "marzo": 14921.78,
+            "abril": 5303.9,
+            "mayo": 10896.82,
+            "junio": 10491.87,
+            "julio": 12501.24,
+            "agosto": 7239.62,
+            "septiembre": 7857.96,
+            "octubre": 9301.44,
+            "noviembre": 10735.78,
+            "diciembre": 12004.17
+        }
+    },
+    {
+        "codigo_tienda": "S008",
+        "nombre_tienda": "La Galería S008",
+        "ciudad": "Córdoba",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 6491.85,
+            "febrero": 5510.19,
+            "marzo": 6753.27,
+            "abril": 5388.61,
+            "mayo": 8653.75,
+            "junio": 5548.26,
+            "julio": 6324.46,
+            "agosto": 6564.3,
+            "septiembre": 14531.06,
+            "octubre": 7240.48,
+            "noviembre": 8599.69,
+            "diciembre": 6266.09
+        }
+    },
+    {
+        "codigo_tienda": "N009",
+        "nombre_tienda": "El Mercado N009",
+        "ciudad": "Gijón",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 14546.6,
+            "febrero": 5079.36,
+            "marzo": 10721.2,
+            "abril": 11417.66,
+            "mayo": 6134.21,
+            "junio": 12995.45,
+            "julio": 14223.36,
+            "agosto": 8791.28,
+            "septiembre": 7000.54,
+            "octubre": 11764.78,
+            "noviembre": 13510.85,
+            "diciembre": 7513.67
+        }
+    },
+    {
+        "codigo_tienda": "N014",
+        "nombre_tienda": "El Rincón N014",
+        "ciudad": "Gijón",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 9065.81,
+            "febrero": 9643.43,
+            "marzo": 11238.3,
+            "abril": 12614.14,
+            "mayo": 10220.92,
+            "junio": 5869.79,
+            "julio": 5133.26,
+            "agosto": 14037.97,
+            "septiembre": 8867.78,
+            "octubre": 8635.67,
+            "noviembre": 11724.12,
+            "diciembre": 12161.32
+        }
+    },
+    {
+        "codigo_tienda": "N020",
+        "nombre_tienda": "El Portal N020",
+        "ciudad": "Gijón",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 9699.02,
+            "febrero": 5662.8,
+            "marzo": 9509.69,
+            "abril": 6156.76,
+            "mayo": 9420.33,
+            "junio": 6661.75,
+            "julio": 8643.04,
+            "agosto": 5470.55,
+            "septiembre": 6495.36,
+            "octubre": 14828.8,
+            "noviembre": 11458.51,
+            "diciembre": 9044.27
+        }
+    },
+    {
+        "codigo_tienda": "N010",
+        "nombre_tienda": "El Escaparate N010",
+        "ciudad": "Gijón",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 8405.15,
+            "febrero": 6882.96,
+            "marzo": 14939.9,
+            "abril": 10973.65,
+            "mayo": 5947.75,
+            "junio": 12954.41,
+            "julio": 10504.93,
+            "agosto": 14351.78,
+            "septiembre": 9137.09,
+            "octubre": 7901.81,
+            "noviembre": 6687.8,
+            "diciembre": 12976.19
+        }
+    },
+    {
+        "codigo_tienda": "N012",
+        "nombre_tienda": "El Escaparate N012",
+        "ciudad": "Gijón",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 6105.8,
+            "febrero": 12211.56,
+            "marzo": 14297.78,
+            "abril": 8270.22,
+            "mayo": 8378.45,
+            "junio": 8551.77,
+            "julio": 6618.43,
+            "agosto": 7401.88,
+            "septiembre": 13016.85,
+            "octubre": 7598.51,
+            "noviembre": 9949.87,
+            "diciembre": 11263.92
+        }
+    },
+    {
+        "codigo_tienda": "S010",
+        "nombre_tienda": "El Hub S010",
+        "ciudad": "Granada",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 11203.59,
+            "febrero": 8605.34,
+            "marzo": 9073.76,
+            "abril": 10833.46,
+            "mayo": 14850.42,
+            "junio": 6143.43,
+            "julio": 7242.5,
+            "agosto": 12786.14,
+            "septiembre": 9367.77,
+            "octubre": 13328.83,
+            "noviembre": 8311.56,
+            "diciembre": 6461.57
+        }
+    },
+    {
+        "codigo_tienda": "S012",
+        "nombre_tienda": "El Escaparate S012",
+        "ciudad": "Granada",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 8836.46,
+            "febrero": 12287.28,
+            "marzo": 8129.63,
+            "abril": 5158.8,
+            "mayo": 10428.18,
+            "junio": 8550.72,
+            "julio": 7119.64,
+            "agosto": 10264.35,
+            "septiembre": 5141.64,
+            "octubre": 12842.83,
+            "noviembre": 7777.85,
+            "diciembre": 12262.54
+        }
+    },
+    {
+        "codigo_tienda": "S006",
+        "nombre_tienda": "La Central S006",
+        "ciudad": "Granada",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 5624.95,
+            "febrero": 12936.83,
+            "marzo": 12914.69,
+            "abril": 7285.99,
+            "mayo": 5496.69,
+            "junio": 5065.48,
+            "julio": 9669.91,
+            "agosto": 12595.18,
+            "septiembre": 8706.85,
+            "octubre": 8981.98,
+            "noviembre": 9342.49,
+            "diciembre": 13694.03
+        }
+    },
+    {
+        "codigo_tienda": "C018",
+        "nombre_tienda": "El Mercado C018",
+        "ciudad": "Guadalajara",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 14792.33,
+            "febrero": 6663.56,
+            "marzo": 11443.72,
+            "abril": 9613.2,
+            "mayo": 10788.64,
+            "junio": 12984.65,
+            "julio": 10112.22,
+            "agosto": 5819.88,
+            "septiembre": 9889.24,
+            "octubre": 14215.08,
+            "noviembre": 8390.51,
+            "diciembre": 5691.87
+        }
+    },
+    {
+        "codigo_tienda": "C019",
+        "nombre_tienda": "El Portal C019",
+        "ciudad": "Guadalajara",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 6329.09,
+            "febrero": 5115.47,
+            "marzo": 8098.4,
+            "abril": 10814.15,
+            "mayo": 7971.06,
+            "junio": 13273.19,
+            "julio": 7870.98,
+            "agosto": 12089.02,
+            "septiembre": 14657.59,
+            "octubre": 6869.82,
+            "noviembre": 13504.73,
+            "diciembre": 8699.94
+        }
+    },
+    {
+        "codigo_tienda": "S016",
+        "nombre_tienda": "El Almacén S016",
+        "ciudad": "Huelva",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 11604.96,
+            "febrero": 10762.08,
+            "marzo": 6572.78,
+            "abril": 7436.36,
+            "mayo": 13003.28,
+            "junio": 12706.76,
+            "julio": 11627.08,
+            "agosto": 12161.73,
+            "septiembre": 12379.47,
+            "octubre": 10796.25,
+            "noviembre": 11033.06,
+            "diciembre": 12089.74
+        }
+    },
+    {
+        "codigo_tienda": "S002",
+        "nombre_tienda": "La Central S002",
+        "ciudad": "Huelva",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 11335.95,
+            "febrero": 10652.8,
+            "marzo": 12278.86,
+            "abril": 12179.26,
+            "mayo": 11147.73,
+            "junio": 11200.02,
+            "julio": 14534.89,
+            "agosto": 12467.66,
+            "septiembre": 5806.59,
+            "octubre": 11959.46,
+            "noviembre": 8468.92,
+            "diciembre": 12152.65
+        }
+    },
+    {
+        "codigo_tienda": "S015",
+        "nombre_tienda": "La Galería S015",
+        "ciudad": "Jaén",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 8105.29,
+            "febrero": 12454.82,
+            "marzo": 9268.8,
+            "abril": 10200.1,
+            "mayo": 6677.74,
+            "junio": 9727.49,
+            "julio": 11097.21,
+            "agosto": 7989.98,
+            "septiembre": 14154.34,
+            "octubre": 5802.76,
+            "noviembre": 6730.68,
+            "diciembre": 9272.97
+        }
+    },
+    {
+        "codigo_tienda": "S017",
+        "nombre_tienda": "La Firma S017",
+        "ciudad": "Jaén",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 9679.63,
+            "febrero": 10359.69,
+            "marzo": 8803.1,
+            "abril": 6026.09,
+            "mayo": 12898.87,
+            "junio": 5646.15,
+            "julio": 13539.64,
+            "agosto": 11214.66,
+            "septiembre": 7577.45,
+            "octubre": 7334.55,
+            "noviembre": 9151.56,
+            "diciembre": 8063.7
+        }
+    },
+    {
+        "codigo_tienda": "S020",
+        "nombre_tienda": "La Galería S020",
+        "ciudad": "Jerez",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 10810.75,
+            "febrero": 11760.72,
+            "marzo": 14985.75,
+            "abril": 8606.42,
+            "mayo": 7673.63,
+            "junio": 14761.37,
+            "julio": 12229.04,
+            "agosto": 6313.49,
+            "septiembre": 9989.79,
+            "octubre": 10392.99,
+            "noviembre": 14296.65,
+            "diciembre": 12604.79
+        }
+    },
+    {
+        "codigo_tienda": "S018",
+        "nombre_tienda": "El Mercado S018",
+        "ciudad": "Jerez",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 14295.68,
+            "febrero": 11957.53,
+            "marzo": 5800.26,
+            "abril": 5420.39,
+            "mayo": 5380.84,
+            "junio": 13970.22,
+            "julio": 7962.28,
+            "agosto": 12236.36,
+            "septiembre": 5502.19,
+            "octubre": 5340.64,
+            "noviembre": 11309.58,
+            "diciembre": 13718.06
+        }
+    },
+    {
+        "codigo_tienda": "S005",
+        "nombre_tienda": "El Bazar S005",
+        "ciudad": "Jerez",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 11624.57,
+            "febrero": 12432.68,
+            "marzo": 7783.62,
+            "abril": 7855.77,
+            "mayo": 12741.83,
+            "junio": 14615.41,
+            "julio": 8765.34,
+            "agosto": 8490.31,
+            "septiembre": 7831.99,
+            "octubre": 13200.77,
+            "noviembre": 11633.76,
+            "diciembre": 5472.89
+        }
+    },
+    {
+        "codigo_tienda": "S014",
+        "nombre_tienda": "La Central S014",
+        "ciudad": "Jerez",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 9363.76,
+            "febrero": 11176.18,
+            "marzo": 11082.84,
+            "abril": 6933.38,
+            "mayo": 9224.5,
+            "junio": 8171.45,
+            "julio": 13193.22,
+            "agosto": 8678.07,
+            "septiembre": 14830.04,
+            "octubre": 5660.62,
+            "noviembre": 13912.18,
+            "diciembre": 10640.9
+        }
+    },
+    {
+        "codigo_tienda": "N017",
+        "nombre_tienda": "El Portal N017",
+        "ciudad": "Logroño",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 10812.86,
+            "febrero": 7415.32,
+            "marzo": 8567.39,
+            "abril": 7341.84,
+            "mayo": 9455.92,
+            "junio": 5324.77,
+            "julio": 7112.08,
+            "agosto": 6887.35,
+            "septiembre": 11831.68,
+            "octubre": 7736.63,
+            "noviembre": 9688.37,
+            "diciembre": 7262.04
+        }
+    },
+    {
+        "codigo_tienda": "N005",
+        "nombre_tienda": "La Central N005",
+        "ciudad": "Logroño",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 13197.19,
+            "febrero": 9983.44,
+            "marzo": 7258.45,
+            "abril": 13240.22,
+            "mayo": 11835.3,
+            "junio": 10203.1,
+            "julio": 9376.18,
+            "agosto": 10529.3,
+            "septiembre": 14535.71,
+            "octubre": 11209.85,
+            "noviembre": 14264.05,
+            "diciembre": 13126.21
+        }
+    },
+    {
+        "codigo_tienda": "N016",
+        "nombre_tienda": "La Tienda N016",
+        "ciudad": "Logroño",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 11760.37,
+            "febrero": 9776.39,
+            "marzo": 7373.88,
+            "abril": 7176.83,
+            "mayo": 5997.83,
+            "junio": 11637.6,
+            "julio": 12114.97,
+            "agosto": 9400.29,
+            "septiembre": 10674.82,
+            "octubre": 5713.92,
+            "noviembre": 8970.58,
+            "diciembre": 12277.22
+        }
+    },
+    {
+        "codigo_tienda": "C004",
+        "nombre_tienda": "El Portal C004",
+        "ciudad": "Madrid",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 13952.77,
+            "febrero": 5322.43,
+            "marzo": 10444.03,
+            "abril": 9648.14,
+            "mayo": 7191.04,
+            "junio": 6289.06,
+            "julio": 5761.11,
+            "agosto": 14578.36,
+            "septiembre": 5424.3,
+            "octubre": 14333.8,
+            "noviembre": 6811.01,
+            "diciembre": 13848.71
+        }
+    },
+    {
+        "codigo_tienda": "C014",
+        "nombre_tienda": "La Plaza C014",
+        "ciudad": "Madrid",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 7313.3,
+            "febrero": 8205.62,
+            "marzo": 5223.64,
+            "abril": 11669.55,
+            "mayo": 6815.98,
+            "junio": 5585.89,
+            "julio": 7538.24,
+            "agosto": 8159.94,
+            "septiembre": 13920.42,
+            "octubre": 6965.48,
+            "noviembre": 7834.24,
+            "diciembre": 13676.69
+        }
+    },
+    {
+        "codigo_tienda": "S009",
+        "nombre_tienda": "La Plaza S009",
+        "ciudad": "Marbella",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 8087.76,
+            "febrero": 5307.72,
+            "marzo": 8805.44,
+            "abril": 6591.98,
+            "mayo": 6652.73,
+            "junio": 8492.74,
+            "julio": 13916.42,
+            "agosto": 7861.31,
+            "septiembre": 8225.17,
+            "octubre": 9412.37,
+            "noviembre": 12575.08,
+            "diciembre": 12995.76
+        }
+    },
+    {
+        "codigo_tienda": "S003",
+        "nombre_tienda": "El Bazar S003",
+        "ciudad": "Málaga",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 8720.3,
+            "febrero": 14133.94,
+            "marzo": 13962.39,
+            "abril": 10967.77,
+            "mayo": 14223.78,
+            "junio": 7745.16,
+            "julio": 13051.23,
+            "agosto": 9900.11,
+            "septiembre": 5995.45,
+            "octubre": 12415.01,
+            "noviembre": 13493.92,
+            "diciembre": 8301.56
+        }
+    },
+    {
+        "codigo_tienda": "N013",
+        "nombre_tienda": "El Escaparate N013",
+        "ciudad": "Pamplona",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 13693.05,
+            "febrero": 14455.97,
+            "marzo": 14712.16,
+            "abril": 9456.67,
+            "mayo": 13508.76,
+            "junio": 5651.86,
+            "julio": 10960.37,
+            "agosto": 10632.3,
+            "septiembre": 7695.39,
+            "octubre": 9726.92,
+            "noviembre": 11482.77,
+            "diciembre": 9803.1
+        }
+    },
+    {
+        "codigo_tienda": "C016",
+        "nombre_tienda": "El Rincón C016",
+        "ciudad": "Salamanca",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 10920.88,
+            "febrero": 14406.59,
+            "marzo": 13499.69,
+            "abril": 12660.18,
+            "mayo": 5709.39,
+            "junio": 13803.38,
+            "julio": 13495.43,
+            "agosto": 6667.62,
+            "septiembre": 11981.6,
+            "octubre": 9270.2,
+            "noviembre": 8382.93,
+            "diciembre": 6060.2
+        }
+    },
+    {
+        "codigo_tienda": "N011",
+        "nombre_tienda": "El Punto N011",
+        "ciudad": "San Sebastián",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 9139.13,
+            "febrero": 8297.56,
+            "marzo": 9865.21,
+            "abril": 10348.0,
+            "mayo": 11221.75,
+            "junio": 5068.23,
+            "julio": 5950.57,
+            "agosto": 6309.15,
+            "septiembre": 9403.0,
+            "octubre": 6360.88,
+            "noviembre": 6973.47,
+            "diciembre": 5220.87
+        }
+    },
+    {
+        "codigo_tienda": "N004",
+        "nombre_tienda": "La Casa N004",
+        "ciudad": "San Sebastián",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 13964.87,
+            "febrero": 11560.88,
+            "marzo": 14359.88,
+            "abril": 12358.14,
+            "mayo": 13391.25,
+            "junio": 7402.8,
+            "julio": 12962.31,
+            "agosto": 7364.04,
+            "septiembre": 11635.71,
+            "octubre": 9404.6,
+            "noviembre": 14155.05,
+            "diciembre": 12309.09
+        }
+    },
+    {
+        "codigo_tienda": "N019",
+        "nombre_tienda": "El Escaparate N019",
+        "ciudad": "Santander",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 13592.06,
+            "febrero": 5451.33,
+            "marzo": 12771.51,
+            "abril": 11273.3,
+            "mayo": 13592.11,
+            "junio": 8575.94,
+            "julio": 5292.66,
+            "agosto": 12022.8,
+            "septiembre": 5630.59,
+            "octubre": 10854.83,
+            "noviembre": 6087.62,
+            "diciembre": 10362.05
+        }
+    },
+    {
+        "codigo_tienda": "N007",
+        "nombre_tienda": "El Rincón N007",
+        "ciudad": "Santander",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 14947.59,
+            "febrero": 6540.44,
+            "marzo": 6288.64,
+            "abril": 14392.01,
+            "mayo": 12579.49,
+            "junio": 13784.48,
+            "julio": 13533.25,
+            "agosto": 6508.09,
+            "septiembre": 11642.14,
+            "octubre": 10353.26,
+            "noviembre": 13032.68,
+            "diciembre": 6338.95
+        }
+    },
+    {
+        "codigo_tienda": "N018",
+        "nombre_tienda": "El Mercado N018",
+        "ciudad": "Santander",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 5947.82,
+            "febrero": 8016.92,
+            "marzo": 11974.05,
+            "abril": 13928.08,
+            "mayo": 5010.96,
+            "junio": 8395.49,
+            "julio": 10651.91,
+            "agosto": 6538.22,
+            "septiembre": 5430.56,
+            "octubre": 5921.49,
+            "noviembre": 6696.96,
+            "diciembre": 5857.93
+        }
+    },
+    {
+        "codigo_tienda": "N003",
+        "nombre_tienda": "La Galería N003",
+        "ciudad": "Santander",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 13795.1,
+            "febrero": 9850.49,
+            "marzo": 13905.47,
+            "abril": 12587.34,
+            "mayo": 5673.42,
+            "junio": 9136.36,
+            "julio": 13372.86,
+            "agosto": 14162.52,
+            "septiembre": 11652.37,
+            "octubre": 6460.79,
+            "noviembre": 11754.62,
+            "diciembre": 13770.44
+        }
+    },
+    {
+        "codigo_tienda": "N006",
+        "nombre_tienda": "El Almacén N006",
+        "ciudad": "Santander",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 11661.48,
+            "febrero": 8527.36,
+            "marzo": 12393.94,
+            "abril": 13220.02,
+            "mayo": 13057.99,
+            "junio": 9243.96,
+            "julio": 11906.41,
+            "agosto": 9961.71,
+            "septiembre": 9994.41,
+            "octubre": 12855.19,
+            "noviembre": 9963.32,
+            "diciembre": 14546.86
+        }
+    },
+    {
+        "codigo_tienda": "C005",
+        "nombre_tienda": "La Plaza C005",
+        "ciudad": "Segovia",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 14795.08,
+            "febrero": 14599.01,
+            "marzo": 7223.53,
+            "abril": 13988.83,
+            "mayo": 11983.43,
+            "junio": 6635.68,
+            "julio": 5410.52,
+            "agosto": 5868.97,
+            "septiembre": 5455.05,
+            "octubre": 12242.42,
+            "noviembre": 13916.55,
+            "diciembre": 11312.0
+        }
+    },
+    {
+        "codigo_tienda": "C011",
+        "nombre_tienda": "La Central C011",
+        "ciudad": "Segovia",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 11711.67,
+            "febrero": 9502.46,
+            "marzo": 9620.32,
+            "abril": 10578.21,
+            "mayo": 10207.84,
+            "junio": 9055.12,
+            "julio": 12413.28,
+            "agosto": 8409.25,
+            "septiembre": 8370.33,
+            "octubre": 10814.5,
+            "noviembre": 13914.07,
+            "diciembre": 14532.92
+        }
+    },
+    {
+        "codigo_tienda": "C006",
+        "nombre_tienda": "La Vitrina C006",
+        "ciudad": "Segovia",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 10408.11,
+            "febrero": 13544.38,
+            "marzo": 12353.42,
+            "abril": 14712.89,
+            "mayo": 13936.22,
+            "junio": 6160.74,
+            "julio": 11756.33,
+            "agosto": 8874.89,
+            "septiembre": 11494.47,
+            "octubre": 9541.39,
+            "noviembre": 6449.38,
+            "diciembre": 9797.71
+        }
+    },
+    {
+        "codigo_tienda": "S007",
+        "nombre_tienda": "El Almacén S007",
+        "ciudad": "Sevilla",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 10669.32,
+            "febrero": 5224.82,
+            "marzo": 6254.45,
+            "abril": 11636.2,
+            "mayo": 13900.97,
+            "junio": 12645.77,
+            "julio": 13878.61,
+            "agosto": 11925.37,
+            "septiembre": 13430.44,
+            "octubre": 5095.35,
+            "noviembre": 7807.16,
+            "diciembre": 14616.06
+        }
+    },
+    {
+        "codigo_tienda": "S004",
+        "nombre_tienda": "El Rincón S004",
+        "ciudad": "Sevilla",
+        "fuente": "sur",
+        "ventas_mes": {
+            "enero": 7193.21,
+            "febrero": 10760.06,
+            "marzo": 7198.51,
+            "abril": 11640.66,
+            "mayo": 9606.46,
+            "junio": 7982.73,
+            "julio": 6148.78,
+            "agosto": 8153.81,
+            "septiembre": 14886.3,
+            "octubre": 14347.48,
+            "noviembre": 11706.61,
+            "diciembre": 13843.91
+        }
+    },
+    {
+        "codigo_tienda": "C001",
+        "nombre_tienda": "El Estudio C001",
+        "ciudad": "Toledo",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 13016.33,
+            "febrero": 12825.24,
+            "marzo": 5988.42,
+            "abril": 6841.54,
+            "mayo": 7562.63,
+            "junio": 13966.13,
+            "julio": 6208.78,
+            "agosto": 12491.96,
+            "septiembre": 11106.58,
+            "octubre": 10634.36,
+            "noviembre": 9746.09,
+            "diciembre": 7583.59
+        }
+    },
+    {
+        "codigo_tienda": "C015",
+        "nombre_tienda": "La Boutique C015",
+        "ciudad": "Toledo",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 8846.81,
+            "febrero": 11702.63,
+            "marzo": 13462.96,
+            "abril": 14332.77,
+            "mayo": 12761.18,
+            "junio": 14040.35,
+            "julio": 9940.3,
+            "agosto": 14215.58,
+            "septiembre": 10427.98,
+            "octubre": 7841.38,
+            "noviembre": 9338.7,
+            "diciembre": 6222.39
+        }
+    },
+    {
+        "codigo_tienda": "C012",
+        "nombre_tienda": "El Mercado C012",
+        "ciudad": "Valladolid",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 10804.22,
+            "febrero": 9158.46,
+            "marzo": 9961.07,
+            "abril": 6672.42,
+            "mayo": 9438.26,
+            "junio": 11488.55,
+            "julio": 12612.15,
+            "agosto": 5758.77,
+            "septiembre": 6591.18,
+            "octubre": 11945.11,
+            "noviembre": 12342.45,
+            "diciembre": 14311.81
+        }
+    },
+    {
+        "codigo_tienda": "C010",
+        "nombre_tienda": "La Tienda C010",
+        "ciudad": "Valladolid",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 8247.35,
+            "febrero": 8765.22,
+            "marzo": 14891.87,
+            "abril": 12668.05,
+            "mayo": 9806.24,
+            "junio": 11668.77,
+            "julio": 10848.04,
+            "agosto": 7841.39,
+            "septiembre": 9994.35,
+            "octubre": 9339.92,
+            "noviembre": 9671.79,
+            "diciembre": 14952.6
+        }
+    },
+    {
+        "codigo_tienda": "N015",
+        "nombre_tienda": "La Plaza N015",
+        "ciudad": "Vitoria",
+        "fuente": "norte",
+        "ventas_mes": {
+            "enero": 9058.59,
+            "febrero": 6683.91,
+            "marzo": 10928.0,
+            "abril": 13105.39,
+            "mayo": 5475.06,
+            "junio": 12755.64,
+            "julio": 14899.09,
+            "agosto": 6346.2,
+            "septiembre": 9187.29,
+            "octubre": 9576.42,
+            "noviembre": 13008.45,
+            "diciembre": 12505.7
+        }
+    },
+    {
+        "codigo_tienda": "C013",
+        "nombre_tienda": "La Vitrina C013",
+        "ciudad": "Ávila",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 9298.21,
+            "febrero": 10477.34,
+            "marzo": 12660.24,
+            "abril": 5724.15,
+            "mayo": 8111.94,
+            "junio": 8498.15,
+            "julio": 14277.63,
+            "agosto": 13511.77,
+            "septiembre": 6553.19,
+            "octubre": 9000.49,
+            "noviembre": 11700.0,
+            "diciembre": 14572.11
+        }
+    },
+    {
+        "codigo_tienda": "C008",
+        "nombre_tienda": "La Casa C008",
+        "ciudad": "Ávila",
+        "fuente": "centro",
+        "ventas_mes": {
+            "enero": 11994.58,
+            "febrero": 10710.12,
+            "marzo": 7416.36,
+            "abril": 9925.24,
+            "mayo": 10833.24,
+            "junio": 13223.08,
+            "julio": 11165.36,
+            "agosto": 12097.91,
+            "septiembre": 12276.82,
+            "octubre": 10596.3,
+            "noviembre": 10251.25,
+            "diciembre": 12747.26
+        }
+    }
+]
