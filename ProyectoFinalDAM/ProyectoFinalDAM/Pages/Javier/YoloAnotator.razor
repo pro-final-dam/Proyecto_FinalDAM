@@ -1,0 +1,46 @@
+@page "/proyectos-javier/yolo-anotator"
+@page "/yolo-anotator"
+@inject NavigationManager Navigation
+
+<PageTitle>Javier | Proyecto YoloAnotator</PageTitle>
+
+<div class="portfolio-page portfolio-javier">
+    <section class="portfolio-hero">
+        <div class="portfolio-hero__badge">Proyecto</div>
+        <div class="project-hero-title">
+            <span class="project-hero-icon project-hero-icon--yolo" aria-hidden="true">
+                <span class="bi bi-bounding-box"></span>
+            </span>
+            <h1>YoloAnotator</h1>
+        </div>
+        <p>Herramienta enfocada en la anotacion de imagenes para generar datasets compatibles con modelos YOLO.</p>
+    </section>
+
+    <section class="portfolio-grid">
+        <article class="portfolio-card portfolio-card--full">
+            <h2>Resumen</h2>
+            <p>Proyecto orientado a acelerar el flujo de etiquetado visual, organizar anotaciones y preparar datos listos para entrenamiento en pipelines de vision artificial.</p>
+        </article>
+
+        <article class="portfolio-card">
+            <h2>Objetivo</h2>
+            <ul class="portfolio-list">
+                <li>Centralizar el etiquetado de imagenes para deteccion de objetos.</li>
+                <li>Reducir tiempos de preparacion de datasets.</li>
+                <li>Facilitar la exportacion al formato YOLO.</li>
+            </ul>
+        </article>
+
+        <article class="portfolio-card">
+            <h2>Estado</h2>
+            <p>En preparacion. Se ampliara con capturas, flujo de trabajo, stack tecnico y resultados conforme avance el desarrollo.</p>
+        </article>
+
+        <article class="portfolio-card">
+            <h2>Accion</h2>
+            <ul class="portfolio-list">
+                <li><a href="@($"{Navigation.BaseUri}proyectos-javier")">Volver a informacion de Javier</a></li>
+            </ul>
+        </article>
+    </section>
+</div>

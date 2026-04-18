@@ -104,15 +104,36 @@
                     <tbody>
                         <tr class="project-row-link">
                             <td data-label="Imagen">
-                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}proyecto-temporal")">
-                                    <img class="portfolio-thumb" src="images/projects/common/project-placeholder.svg" alt="Imagen generica de proyecto" />
+                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}task-manager")">
+                                    <span class="project-icon-tile project-icon-tile--task" role="img" aria-label="Icono de TaskManager">
+                                        <span class="bi bi-kanban-fill" aria-hidden="true"></span>
+                                    </span>
                                 </a>
                             </td>
                             <td data-label="Proyecto">
-                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}proyecto-temporal")">proyecto-temporal</a>
+                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}task-manager")">
+                                    <span class="bi bi-kanban-fill project-link-icon project-link-icon--task" aria-hidden="true"></span>TaskManager
+                                </a>
                             </td>
                             <td data-label="Descripcion">
-                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}proyecto-temporal")">Proyecto temporal vacio. Pulsa la fila para ver su pagina dedicada.</a>
+                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}task-manager")">Gestor de tareas en evolucion. Pulsa la fila para ver su pagina dedicada.</a>
+                            </td>
+                        </tr>
+                        <tr class="project-row-link">
+                            <td data-label="Imagen">
+                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}yolo-anotator")">
+                                    <span class="project-icon-tile project-icon-tile--yolo" role="img" aria-label="Icono de YoloAnotator">
+                                        <span class="bi bi-bounding-box" aria-hidden="true"></span>
+                                    </span>
+                                </a>
+                            </td>
+                            <td data-label="Proyecto">
+                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}yolo-anotator")">
+                                    <span class="bi bi-bounding-box project-link-icon project-link-icon--yolo" aria-hidden="true"></span>YoloAnotator
+                                </a>
+                            </td>
+                            <td data-label="Descripcion">
+                                <a class="project-cell-link" href="@($"{Navigation.BaseUri}yolo-anotator")">Herramienta para anotacion de imagenes orientada a datasets YOLO. Pulsa la fila para ver su pagina dedicada.</a>
                             </td>
                         </tr>
                     </tbody>
